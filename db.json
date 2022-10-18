@@ -15,60 +15,60 @@
                        {"id": "55","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}}]
   }],
   "paymentMethod": [{
-    "Id": "1",
-    "Name": "Sistecrédito",
-    "Icon": "sistecredito.svg",
-    "Active": true,
-    "CreatedAt": "2020-06-18T15:22:50.000Z",
-    "UpdatedAt": "2020-06-18T15:22:50.000Z",
-    "Config": {
-        "DriverName": "Sistecredito.Driver",
-        "ConnectionType": "http-client",
-        "ConnectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
-        "ConfigurationDetails": {
-            "Action": "credit/start",
-            "Url": "https://driver-siste.herokuapp.com/",
-            "MethodToExecute": "SendHttpClientPost",
-            "Headers": {
+    "id": "1",
+    "name": "Sistecrédito",
+    "icon": "sistecredito.svg",
+    "active": true,
+    "createdAt": "2020-06-18T15:22:50.000Z",
+    "updatedAt": "2020-06-18T15:22:50.000Z",
+    "config": {
+        "driverName": "Sistecredito.Driver",
+        "connectionType": "http-client",
+        "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
+        "configurationDetails": {
+            "cction": "credit/start",
+            "url": "https://driver-siste.herokuapp.com/",
+            "methodToExecute": "SendHttpClientPost",
+            "headers": {
                 "SCOrigen": "Staging",
                 "Ocp-Apim-Subscription-Key": "42fee88913d34e3b8c2c5ae45847bc32"
             },
-            "AppId": "",
-            "MethodType": "",
-            "PostRequestMediaType": "application/json"
+            "appId": "",
+            "methodType": "",
+            "postRequestMediaType": "application/json"
         }
     },
-    "RequiredFields": [
+    "requiredFields": [
         {
-            "Field": "$Client.Document",
-            "Display": "#idDocument#"
+            "field": "$Client.Document",
+            "display": "#idDocument#"
         },
         {
-            "Field": "$Client.DocType",
-            "Display": "#typeDocument#"
+            "field": "$Client.DocType",
+            "display": "#typeDocument#"
         },
         {
             "Field": "$Value",
-            "Display": "#valueToPaid#"
+            "display": "#valueToPaid#"
         },
         {
-            "Field": "$VendorId",
-            "Display": "#vendorId#"
+            "field": "$VendorId",
+            "display": "#vendorId#"
         },
         {
-            "Field": "$Invoice",
-            "Display": "#orderId#"
+            "field": "$Invoice",
+            "display": "#orderId#"
         },
         {
-            "Field": "$StoreId",
-            "Display": "#storeId#"
+            "field": "$StoreId",
+            "display": "#storeId#"
         },
         {
-            "Field": "$UrlResponse",
-            "Display": "#responseUrl#"
+            "field": "$UrlResponse",
+            "display": "#responseUrl#"
         }
     ],
-    "TemplateDataDriver": {
+    "templateDataDriver": {
         "idDocument": "#idDocument#",
         "typeDocument": "#typeDocument#",
         "valueToPaid": "#valueToPaid#",
@@ -79,61 +79,61 @@
         "ecommerceType": 2
     }
 },
-                   {
-    "Id": "55",
-    "Name": "Sistecrédito",
-    "Icon": "sistecredito.svg",
-    "Active": true,
-    "CreatedAt": "2020-06-18T15:22:50.000Z",
-    "UpdatedAt": "2020-06-18T15:22:50.000Z",
-    "Config": {
-        "DriverName": "Sistecredito.Driver",
-        "ConnectionType": "http-client",
-        "ConnectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
-        "ConfigurationDetails": {
-            "Action": "credit/start",
-            "Url": "https://driver-siste.herokuapp.com/",
-            "MethodToExecute": "SendHttpClientPost",
-            "Headers": {
+{
+    "id": "55",
+    "name": "Sistecrédito",
+    "icon": "sistecredito.svg",
+    "active": true,
+    "createdAt": "2020-06-18T15:22:50.000Z",
+    "updatedAt": "2020-06-18T15:22:50.000Z",
+    "config": {
+        "driverName": "Sistecredito.Driver",
+        "connectionType": "http-client",
+        "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
+        "configurationDetails": {
+            "cction": "credit/start",
+            "url": "https://driver-siste.herokuapp.com/",
+            "methodToExecute": "SendHttpClientPost",
+            "headers": {
                 "SCOrigen": "Staging",
                 "Ocp-Apim-Subscription-Key": "42fee88913d34e3b8c2c5ae45847bc32"
             },
-            "AppId": "",
-            "MethodType": "",
-            "PostRequestMediaType": "application/json"
+            "appId": "",
+            "methodType": "",
+            "postRequestMediaType": "application/json"
         }
     },
-    "RequiredFields": [
+    "requiredFields": [
         {
-            "Field": "$Client.Document",
-            "Display": "#idDocument#"
+            "field": "$Client.Document",
+            "display": "#idDocument#"
         },
         {
-            "Field": "$Client.DocType",
-            "Display": "#typeDocument#"
+            "field": "$Client.DocType",
+            "display": "#typeDocument#"
         },
         {
             "Field": "$Value",
-            "Display": "#valueToPaid#"
+            "display": "#valueToPaid#"
         },
         {
-            "Field": "$VendorId",
-            "Display": "#vendorId#"
+            "field": "$VendorId",
+            "display": "#vendorId#"
         },
         {
-            "Field": "$Invoice",
-            "Display": "#orderId#"
+            "field": "$Invoice",
+            "display": "#orderId#"
         },
         {
-            "Field": "$StoreId",
-            "Display": "#storeId#"
+            "field": "$StoreId",
+            "display": "#storeId#"
         },
         {
-            "Field": "$UrlResponse",
-            "Display": "#responseUrl#"
+            "field": "$UrlResponse",
+            "display": "#responseUrl#"
         }
     ],
-    "TemplateDataDriver": {
+    "templateDataDriver": {
         "idDocument": "#idDocument#",
         "typeDocument": "#typeDocument#",
         "valueToPaid": "#valueToPaid#",
