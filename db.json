@@ -1,0 +1,111 @@
+{
+  "customerPaymentMethod": [{
+    "id": "5eeba15a735e4a2e08868191",
+    "storeId": "5deac679d38ef90001e8f2c1",
+    "name": "Sistecrédito",
+    "phone": "11999999999",
+    "email": "fkkfkf@kffkkfkf.com",
+    "active": true,
+    "createdAt": "2020-06-18T15:22:50.000Z",
+    "updatedAt": "2020-06-18T15:22:50.000Z",
+    "businessValidation": {
+      "validateInvoice": true
+    },
+    "paymentMethods": [{"id": "1","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}}]
+  }],
+  "paymentMethod": [{
+    "Id": "1",
+    "Name": "Sistecrédito",
+    "Icon": "sistecredito.svg",
+    "Active": true,
+    "CreatedAt": "2020-06-18T15:22:50.000Z",
+    "UpdatedAt": "2020-06-18T15:22:50.000Z",
+    "Config": {
+        "DriverName": "Sistecredito.Driver",
+        "ConnectionType": "http-client",
+        "ConnectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
+        "ConfigurationDetails": {
+            "Action": "credit/start",
+            "Url": "https://driver-siste.herokuapp.com/",
+            "MethodToExecute": "SendHttpClientPost",
+            "Headers": {
+                "SCOrigen": "Staging",
+                "Ocp-Apim-Subscription-Key": "42fee88913d34e3b8c2c5ae45847bc32"
+            },
+            "AppId": "",
+            "MethodType": "",
+            "PostRequestMediaType": "application/json"
+        }
+    },
+    "RequiredFields": [
+        {
+            "Field": "$Client.Document",
+            "Display": "#idDocument#"
+        },
+        {
+            "Field": "$Client.DocType",
+            "Display": "#typeDocument#"
+        },
+        {
+            "Field": "$Value",
+            "Display": "#valueToPaid#"
+        },
+        {
+            "Field": "$VendorId",
+            "Display": "#vendorId#"
+        },
+        {
+            "Field": "$Invoice",
+            "Display": "#orderId#"
+        },
+        {
+            "Field": "$StoreId",
+            "Display": "#storeId#"
+        },
+        {
+            "Field": "$UrlResponse",
+            "Display": "#responseUrl#"
+        }
+    ],
+    "TemplateDataDriver": {
+        "idDocument": "#idDocument#",
+        "typeDocument": "#typeDocument#",
+        "valueToPaid": "#valueToPaid#",
+        "vendorId": "#vendorId#",
+        "orderId": "#orderId#",
+        "storeId": "#storeId#",
+        "responseUrl": "#responseUrl#",
+        "ecommerceType": 2
+    }
+}],
+  "Approved" : {
+    "description": "Payment Approved",
+    "codeResponse": "00",
+    "statusResponse": "Approved",
+    "transactionId": "123456789",
+    "authorizationCode": "123456",
+    "approvalCode": "123456",
+    "receipt": "123456789",
+    "paymentRedirectUrl": ""
+  },
+  "Rejected" : {
+    "description": "Payment Rejected",
+    "codeResponse": "99",
+    "statusResponse": "Rejected",
+    "transactionId": "123456789",
+    "authorizationCode": "123456",
+    "approvalCode": "",
+    "receipt": "123456789798",
+    "paymentRedirectUrl": ""
+  },
+  "Pending" : {
+    "description": "Payment Pending",
+    "codeResponse": "01",
+    "statusResponse": "Pending",
+    "transactionId": "123456789",
+    "authorizationCode": "123456",
+    "approvalCode": "",
+    "receipt": "123456789798",
+    "paymentRedirectUrl": "https://www.sistecredito.com?transactionId=123456789"
+  }
+}
