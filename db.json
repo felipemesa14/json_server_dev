@@ -142,7 +142,7 @@
         },
         {
             "field": "$Client.Email",
-            "display": "#address#"
+            "display": "#email#"
         },
         {
             "field": "$Client.IpAddress",
@@ -150,7 +150,7 @@
         },
         {
             "field": "$Client.Address",
-            "display": "#email#"
+            "display": "#address#"
         },
         {
             "field": "$Description",
