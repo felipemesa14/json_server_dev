@@ -77,6 +77,71 @@
         "responseUrl": "#responseUrl#",
         "ecommerceType": 2
     }
+},
+                   {
+    "Id": "55",
+    "Name": "Sistecrédito",
+    "Icon": "sistecredito.svg",
+    "Active": true,
+    "CreatedAt": "2020-06-18T15:22:50.000Z",
+    "UpdatedAt": "2020-06-18T15:22:50.000Z",
+    "Config": {
+        "DriverName": "Sistecredito.Driver",
+        "ConnectionType": "http-client",
+        "ConnectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
+        "ConfigurationDetails": {
+            "Action": "credit/start",
+            "Url": "https://driver-siste.herokuapp.com/",
+            "MethodToExecute": "SendHttpClientPost",
+            "Headers": {
+                "SCOrigen": "Staging",
+                "Ocp-Apim-Subscription-Key": "42fee88913d34e3b8c2c5ae45847bc32"
+            },
+            "AppId": "",
+            "MethodType": "",
+            "PostRequestMediaType": "application/json"
+        }
+    },
+    "RequiredFields": [
+        {
+            "Field": "$Client.Document",
+            "Display": "#idDocument#"
+        },
+        {
+            "Field": "$Client.DocType",
+            "Display": "#typeDocument#"
+        },
+        {
+            "Field": "$Value",
+            "Display": "#valueToPaid#"
+        },
+        {
+            "Field": "$VendorId",
+            "Display": "#vendorId#"
+        },
+        {
+            "Field": "$Invoice",
+            "Display": "#orderId#"
+        },
+        {
+            "Field": "$StoreId",
+            "Display": "#storeId#"
+        },
+        {
+            "Field": "$UrlResponse",
+            "Display": "#responseUrl#"
+        }
+    ],
+    "TemplateDataDriver": {
+        "idDocument": "#idDocument#",
+        "typeDocument": "#typeDocument#",
+        "valueToPaid": "#valueToPaid#",
+        "vendorId": "#vendorId#",
+        "orderId": "#orderId#",
+        "storeId": "#storeId#",
+        "responseUrl": "#responseUrl#",
+        "ecommerceType": 2
+    }
 }],
   "Approved" : {
     "description": "Payment Approved",
