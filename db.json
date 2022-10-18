@@ -11,7 +11,8 @@
     "businessValidation": {
       "validateInvoice": true
     },
-    "paymentMethods": [{"id": "1","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}}]
+    "paymentMethods": [{"id": "1","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}},
+                       {"id": "55","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}}]
   }],
   "paymentMethod": [{
     "Id": "1",
