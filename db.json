@@ -105,6 +105,10 @@
     },
     "requiredFields": [
         {
+            "field": "$_id",
+            "display": "#transactionId#"
+        },
+        {
             "field": "$Client.Document",
             "display": "#document#"
         },
@@ -150,7 +154,7 @@
         }
     ],
     "templateDataDriver": {
-      "transactionId": "633db57fc42e7376037618ea",
+      "transactionId": "#transactionId#",
       "client": {
           "docType": "#docType#",
           "document": "#document#",
