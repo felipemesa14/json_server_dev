@@ -91,8 +91,8 @@
         "connectionType": "http-client",
         "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
         "configurationDetails": {
-            "cction": "credit/start",
-            "url": "https://driver-siste.herokuapp.com/",
+            "cction": "pse/createPayment",
+            "url": "https://pse-siste-driver.herokuapp.com/",
             "methodToExecute": "SendHttpClientPost",
             "headers": {
                 "SCOrigen": "Staging",
@@ -106,42 +106,82 @@
     "requiredFields": [
         {
             "field": "$Client.Document",
-            "display": "#idDocument#"
+            "display": "#document#"
         },
         {
             "field": "$Client.DocType",
-            "display": "#typeDocument#"
+            "display": "#docType#"
         },
         {
             "Field": "$Value",
-            "display": "#valueToPaid#"
-        },
-        {
-            "field": "$VendorId",
-            "display": "#vendorId#"
+            "display": "#value#"
         },
         {
             "field": "$Invoice",
-            "display": "#orderId#"
-        },
-        {
-            "field": "$StoreId",
-            "display": "#storeId#"
+            "display": "#ticketId#"
         },
         {
             "field": "$UrlResponse",
-            "display": "#responseUrl#"
+            "display": "#urlResponse#"
+        },
+        {
+            "field": "$Client.Name",
+            "display": "#name#"
+        },
+        {
+            "field": "$Client.LastName",
+            "display": "#lastName#"
+        },
+        {
+            "field": "$Client.Phone",
+            "display": "#cellPhone#"
+        },
+        {
+            "field": "$Client.Email",
+            "display": "#address#"
+        },
+        {
+            "field": "$Client.IpAddress",
+            "display": "#ip#"
+        },
+        {
+            "field": "$Client.Address",
+            "display": "#email#"
         }
     ],
     "templateDataDriver": {
-        "idDocument": "#idDocument#",
-        "typeDocument": "#typeDocument#",
-        "valueToPaid": "#valueToPaid#",
-        "vendorId": "#vendorId#",
-        "orderId": "#orderId#",
-        "storeId": "#storeId#",
-        "responseUrl": "#responseUrl#",
-        "ecommerceType": 2
+      "transactionId": "633db57fc42e7376037618ea",
+      "client": {
+          "docType": "#docType#",
+          "document": "#document#",
+          "name": "#name#",
+          "lastName": "#lastName#",
+          "cellPhone": "#cellPhone#",
+          "address": "#address#",
+          "email": "#email#"
+      },
+      "allied": {
+          "docType": "NIT",
+          "document": "12345625",
+          "name": "LuegoPago",
+          "ciiu": "4050",
+          "entityCode": "8110077137",
+          "serviceCode": "1003"
+      },
+      "payment": {
+          "value": "#value#",
+          "vatValue": 0,
+          "description": "#description#",
+          "bankCode": "1022",
+          "userType": 0,
+          "ticketId": "#ticketId#",
+          "urlResponse": "#urlResponse#",
+          "references": [
+              "#ip#",
+              "#docType#",
+              "#document#"
+          ]
+      }
     }
 }],
   "Approved" : {
