@@ -151,6 +151,10 @@
         {
             "field": "$Client.Address",
             "display": "#email#"
+        },
+        {
+            "field": "$Description",
+            "display": "#description#"
         }
     ],
     "templateDataDriver": {
