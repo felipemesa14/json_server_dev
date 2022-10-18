@@ -26,7 +26,7 @@
         "connectionType": "http-client",
         "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
         "configurationDetails": {
-            "cction": "credit/start",
+            "action": "credit/start",
             "url": "https://driver-siste.herokuapp.com/",
             "methodToExecute": "SendHttpClientPost",
             "headers": {
@@ -91,7 +91,7 @@
         "connectionType": "http-client",
         "connectionString": "Endpoint=sb://sistecredito.servicebus.windows.net",
         "configurationDetails": {
-            "cction": "pse/createPayment",
+            "action": "pse/createPayment",
             "url": "https://pse-siste-driver.herokuapp.com/",
             "methodToExecute": "SendHttpClientPost",
             "headers": {
