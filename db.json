@@ -155,6 +155,14 @@
         {
             "field": "$Description",
             "display": "#description#"
+        },
+        {
+            "field": "$PaymentMethod.bankCode",
+            "display": "#bankCode#"
+        },
+        {
+            "field": "$PaymentMethod.UserType",
+            "display": "#userType#"
         }
     ],
     "templateDataDriver": {
@@ -180,8 +188,8 @@
           "value": "#value#",
           "vatValue": 0,
           "description": "#description#",
-          "bankCode": "1022",
-          "userType": 0,
+          "bankCode": "#bankCode#",
+          "userType": "#userType#",
           "ticketId": "#ticketId#",
           "urlResponse": "#urlResponse#",
           "references": [
