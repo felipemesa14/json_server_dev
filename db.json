@@ -24,7 +24,7 @@
       },
       {
         "id": "55",
-        "name" : "Pse Avanza"
+        "name" : "Pse Avanza",
         "active": true,
         "credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"},
         "banks":[
