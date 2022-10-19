@@ -2,7 +2,10 @@
   "customerPaymentMethod": [{
     "id": "5eeba15a735e4a2e08868191",
     "storeId": "5deac679d38ef90001e8f2c1",
-    "name": "Sistecrédito",
+    "docType":"NIT",
+    "document": "8110077137",
+    "ciiu":"2050",
+    "name": "LuegoPago",
     "phone": "11999999999",
     "email": "fkkfkf@kffkkfkf.com",
     "active": true,
@@ -11,8 +14,271 @@
     "businessValidation": {
       "validateInvoice": true
     },
-    "paymentMethods": [{"id": "1","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}},
-                       {"id": "55","active": true,"credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"}}]
+    "paymentMethods": [
+      {
+       "id": "1",
+       "name" : "Sistecrédito",
+       "active": true,
+       "credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"},
+       "banks":[]
+      },
+      {
+        "id": "55",
+        "name" : "Pse Avanza"
+        "active": true,
+        "credentials": {"publicKey": "pk_test_123","secretKey": "sk_test_123"},
+        "banks":[
+           {
+              "financialInstitutionCode":"0",
+              "financialInstitutionName":"A continuación seleccione su banco"
+           },
+           {
+              "financialInstitutionCode":"1552",
+              "financialInstitutionName":"BAN.CO"
+           },
+           {
+              "financialInstitutionCode":"1059",
+              "financialInstitutionName":"BANCAMIA"
+           },
+           {
+              "financialInstitutionCode":"1040",
+              "financialInstitutionName":"BANCO AGRARIO"
+           },
+           {
+              "financialInstitutionCode":"1081",
+              "financialInstitutionName":"BANCO AGRARIO DESARROLLO"
+           },
+           {
+              "financialInstitutionCode":"1080",
+              "financialInstitutionName":"BANCO AGRARIO QA DEFECTOS"
+           },
+           {
+              "financialInstitutionCode":"10322",
+              "financialInstitutionName":"BANCO CAJA SOCIAL"
+           },
+           {
+              "financialInstitutionCode":"1032",
+              "financialInstitutionName":"BANCO CAJA SOCIAL DESARROLLO"
+           },
+           {
+              "financialInstitutionCode":"1052",
+              "financialInstitutionName":"BANCO COMERCIAL AVVILLAS S.A."
+           },
+           {
+              "financialInstitutionCode":"1061",
+              "financialInstitutionName":"BANCO COOMEVA S.A. - BANCOOMEVA"
+           },
+           {
+              "financialInstitutionCode":"1066",
+              "financialInstitutionName":"BANCO COOPERATIVO COOPCENTRAL"
+           },
+           {
+              "financialInstitutionCode":"1058",
+              "financialInstitutionName":"BANCO CREDIFINANCIERA"
+           },
+           {
+              "financialInstitutionCode":"1051",
+              "financialInstitutionName":"BANCO DAVIVIENDA"
+           },
+           {
+              "financialInstitutionCode":"10512",
+              "financialInstitutionName":"BANCO DAVIVIENDA Desarrollo"
+           },
+           {
+              "financialInstitutionCode":"1039",
+              "financialInstitutionName":"BANCO DE BOGOTA"
+           },
+           {
+              "financialInstitutionCode":"1001",
+              "financialInstitutionName":"BANCO DE BOGOTA DESARROLLO 2013"
+           },
+           {
+              "financialInstitutionCode":"1023",
+              "financialInstitutionName":"BANCO DE OCCIDENTE"
+           },
+           {
+              "financialInstitutionCode":"1062",
+              "financialInstitutionName":"BANCO FALABELLA"
+           },
+           {
+              "financialInstitutionCode":"1063",
+              "financialInstitutionName":"BANCO FINANDINA S.A BIC"
+           },
+           {
+              "financialInstitutionCode":"1010",
+              "financialInstitutionName":"BANCO GNB COLOMBIA (ANTES HSBC)"
+           },
+           {
+              "financialInstitutionCode":"1012",
+              "financialInstitutionName":"BANCO GNB SUDAMERIS"
+           },
+           {
+              "financialInstitutionCode":"1060",
+              "financialInstitutionName":"BANCO PICHINCHA S.A."
+           },
+           {
+              "financialInstitutionCode":"1002",
+              "financialInstitutionName":"BANCO POPULAR"
+           },
+           {
+              "financialInstitutionCode":"1203",
+              "financialInstitutionName":"BANCO PRODUCTOS POR SEPARADO"
+           },
+           {
+              "financialInstitutionCode":"1101",
+              "financialInstitutionName":"Banco PSE"
+           },
+           {
+              "financialInstitutionCode":"1065",
+              "financialInstitutionName":"BANCO SANTANDER COLOMBIA"
+           },
+           {
+              "financialInstitutionCode":"1069",
+              "financialInstitutionName":"BANCO SERFINANZA"
+           },
+           {
+              "financialInstitutionCode":"1035",
+              "financialInstitutionName":"BANCO TEQUENDAMA"
+           },
+           {
+              "financialInstitutionCode":"1004",
+              "financialInstitutionName":"Banco union Colombia Credito"
+           },
+           {
+              "financialInstitutionCode":"1022",
+              "financialInstitutionName":"BANCO UNION COLOMBIANO"
+           },
+           {
+              "financialInstitutionCode":"1005",
+              "financialInstitutionName":"BANCO UNION COLOMBIANO FD2"
+           },
+           {
+              "financialInstitutionCode":"1055",
+              "financialInstitutionName":"Banco Web Service ACH"
+           },
+           {
+              "financialInstitutionCode":"1055",
+              "financialInstitutionName":"Banco Web Service ACH WSE 3.0"
+           },
+           {
+              "financialInstitutionCode":"10072",
+              "financialInstitutionName":"BANCOLOMBIA DATAPOWER"
+           },
+           {
+              "financialInstitutionCode":"10071",
+              "financialInstitutionName":"BANCOLOMBIA DESARROLLO"
+           },
+           {
+              "financialInstitutionCode":"1007",
+              "financialInstitutionName":"BANCOLOMBIA QA"
+           },
+           {
+              "financialInstitutionCode":"1077",
+              "financialInstitutionName":"BANKA"
+           },
+           {
+              "financialInstitutionCode":"1013",
+              "financialInstitutionName":"BBVA COLOMBIA S.A."
+           },
+           {
+              "financialInstitutionCode":"1513",
+              "financialInstitutionName":"BBVA DESARROLLO"
+           },
+           {
+              "financialInstitutionCode":"1009",
+              "financialInstitutionName":"CITIBANK COLOMBIA S.A."
+           },
+           {
+              "financialInstitutionCode":"1370",
+              "financialInstitutionName":"COLTEFINANCIERA"
+           },
+           {
+              "financialInstitutionCode":"1292",
+              "financialInstitutionName":"CONFIAR COOPERATIVA FINANCIERA"
+           },
+           {
+              "financialInstitutionCode":"1291",
+              "financialInstitutionName":"COOFINEP COOPERATIVA FINANCIERA"
+           },
+           {
+              "financialInstitutionCode":"1289",
+              "financialInstitutionName":"COOPERATIVA FINANCIERA COTRAFA"
+           },
+           {
+              "financialInstitutionCode":"1283",
+              "financialInstitutionName":"COOPERATIVA FINANCIERA DE ANTIOQUIA"
+           },
+           {
+              "financialInstitutionCode":"1558",
+              "financialInstitutionName":"CREDIFIANCIERA"
+           },
+           {
+              "financialInstitutionCode":"1097",
+              "financialInstitutionName":"DALE"
+           },
+           {
+              "financialInstitutionCode":"1551",
+              "financialInstitutionName":"DAVIPLATA"
+           },
+           {
+              "financialInstitutionCode":"1303",
+              "financialInstitutionName":"GIROS Y FINANZAS COMPAÑIA DE FINANCIAMIENTO S.A"
+           },
+           {
+              "financialInstitutionCode":"1637",
+              "financialInstitutionName":"IRIS"
+           },
+           {
+              "financialInstitutionCode":"1006",
+              "financialInstitutionName":"ITAU"
+           },
+           {
+              "financialInstitutionCode":"1070",
+              "financialInstitutionName":"LULO BANK"
+           },
+           {
+              "financialInstitutionCode":"1801",
+              "financialInstitutionName":"MOVII S.A"
+           },
+           {
+              "financialInstitutionCode":"1508",
+              "financialInstitutionName":"NEQUI CERTIFICACION"
+           },
+           {
+              "financialInstitutionCode":"9988",
+              "financialInstitutionName":"prueba restriccion"
+           },
+           {
+              "financialInstitutionCode":"121212",
+              "financialInstitutionName":"Prueba Steve"
+           },
+           {
+              "financialInstitutionCode":"1811",
+              "financialInstitutionName":"RAPPIPAY"
+           },
+           {
+              "financialInstitutionCode":"1151",
+              "financialInstitutionName":"RAPPIPAY - DAVIVIENDA"
+           },
+           {
+              "financialInstitutionCode":"1991",
+              "financialInstitutionName":"SANTANDER CONSUMER COLOMBIA"
+           },
+           {
+              "financialInstitutionCode":"1019",
+              "financialInstitutionName":"SCOTIABANK COLPATRIA DESARROLLO"
+           },
+           {
+              "financialInstitutionCode":"1078",
+              "financialInstitutionName":"SCOTIABANK COLPATRIA UAT"
+           },
+           {
+              "financialInstitutionCode":"1305",
+              "financialInstitutionName":"SEIVY GM FINANCIAL"
+           }
+        ]
+      }
+    ]
   }],
   "paymentMethod": [{
     "id": "1",
@@ -181,7 +447,7 @@
           "document": "12345625",
           "name": "LuegoPago",
           "ciiu": "4050",
-          "entityCode": "8110077137",
+            "entityCode": "8110077137",
           "serviceCode": "1003"
       },
       "payment": {
