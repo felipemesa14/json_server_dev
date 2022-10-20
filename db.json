@@ -113,7 +113,8 @@
             "orderId":"#orderId#",
             "storeId":"#storeId#",
             "responseUrl":"#responseUrl#",
-            "ecommerceType":2
+            "ecommerceType":2,
+            "tipe":2
          }
       },
       {
