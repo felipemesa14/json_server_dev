@@ -202,19 +202,19 @@
                "display":"#userType#"
             },
             {
-               "field":"AlliedInformation.IdentificationType",
+               "field":"$AlliedInformation.IdentificationType",
                "display":"#identificationType#"
             },
             {
-               "field":"AlliedInformation.Identification",
+               "field":"$AlliedInformation.Identification",
                "display":"#identification#"
             },
             {
-               "field":"AlliedInformation.Name",
+               "field":"$AlliedInformation.Name",
                "display":"#alliedName#"
             },
             {
-               "field":"AlliedInformation.Ciiu",
+               "field":"$AlliedInformation.Ciiu",
                "display":"#ciiu#"
             }
          ],
