@@ -167,7 +167,7 @@
             },
             {
                "field":"$Client.Name",
-               "display":"#name#"
+               "display":"#clientName#"
             },
             {
                "field":"$Client.LastName",
@@ -211,7 +211,7 @@
             },
             {
                "field":"AlliedInformation.name",
-               "display":"#name#"
+               "display":"#alliedName#"
             },
             {
                "field":"AlliedInformation.ciiu",
@@ -223,7 +223,7 @@
             "client":{
                "docType":"#docType#",
                "document":"#document#",
-               "name":"#name#",
+               "name":"#clientName#",
                "lastName":"#lastName#",
                "cellPhone":"#cellPhone#",
                "address":"#address#",
@@ -232,7 +232,7 @@
             "allied":{
                "identificationType":"#identificationType#",
                "identification":"#identification#",
-               "name":"#name#",
+               "name":"#alliedName#",
                "ciiu":"#ciiu#",
                "entityCode":"8110077137",
                "serviceCode":"1003"
