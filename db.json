@@ -21,9 +21,9 @@
                "name":"Sistecrédito",
                "active":true,
                "credentials":{
-                  "publicKey":"5eeba15a735e4a2e08868191",
-                  "secretKey":"5deac679d38ef90001e8f2c1"
-               },
+                   "#storeId#": "5deac679d38ef90001e8f2c1",
+                   "#vendorId#": "5eeba15a735e4a2e08868191"
+                 },
                "banks":[
                   
                ]
@@ -33,8 +33,8 @@
                "name":"Pse Avanza",
                "active":true,
                "credentials":{
-                  "publicKey":"8110077137",
-                  "secretKey":"1003"
+                   "#entityCode#": "8110077137",
+                   "#serviceCode#": "1003"
                },
                "banks":[
                   {
