@@ -214,8 +214,8 @@
                "email":"#email#"
             },
             "allied":{
-               "docType":"NIT",
-               "document":"12345625",
+               "identificationType":"NIT",
+               "identification":"12345625",
                "name":"LuegoPago",
                "ciiu":"4050",
                "entityCode":"8110077137",
