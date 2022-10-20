@@ -113,8 +113,7 @@
             "orderId":"#orderId#",
             "storeId":"#storeId#",
             "responseUrl":"#responseUrl#",
-            "ecommerceType":2,
-            "tipe":2
+            "ecommerceType":2
          }
       },
       {
@@ -136,7 +135,7 @@
                   "SCOrigen":"Staging",
                   "Ocp-Apim-Subscription-Key":"42fee88913d34e3b8c2c5ae45847bc32"
                },
-               "appId":"driver",
+               "appId":"",
                "methodType":"",
                "postRequestMediaType":"application/json"
             }
