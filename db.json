@@ -194,7 +194,7 @@
                "display":"#description#"
             },
             {
-               "field":"$PaymentMethod.bankCode",
+               "field":"$PaymentMethod.BankCode",
                "display":"#bankCode#"
             },
             {
@@ -202,19 +202,19 @@
                "display":"#userType#"
             },
             {
-               "field":"AlliedInformation.identificationType",
+               "field":"AlliedInformation.IdentificationType",
                "display":"#identificationType#"
             },
             {
-               "field":"AlliedInformation.identification",
+               "field":"AlliedInformation.Identification",
                "display":"#identification#"
             },
             {
-               "field":"AlliedInformation.name",
+               "field":"AlliedInformation.Name",
                "display":"#alliedName#"
             },
             {
-               "field":"AlliedInformation.ciiu",
+               "field":"AlliedInformation.Ciiu",
                "display":"#ciiu#"
             }
          ],
