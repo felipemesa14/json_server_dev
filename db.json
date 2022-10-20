@@ -29,7 +29,7 @@
                ]
             },
             {
-               "id":"2",
+               "id":"55",
                "name":"Pse Avanza",
                "active":true,
                "credentials":{
@@ -117,7 +117,7 @@
          }
       },
       {
-         "id":"2",
+         "id":"55",
          "name":"Pse",
          "icon":"pse.svg",
          "active":true,
@@ -200,6 +200,22 @@
             {
                "field":"$PaymentMethod.UserType",
                "display":"#userType#"
+            },
+            {
+               "field":"AlliedInformation.identificationType",
+               "display":"#identificationType#"
+            },
+            {
+               "field":"AlliedInformation.identification",
+               "display":"#identification#"
+            },
+            {
+               "field":"AlliedInformation.name",
+               "display":"#name#"
+            },
+            {
+               "field":"AlliedInformation.ciiu",
+               "display":"#ciiu#"
             }
          ],
          "templateDataDriver":{
@@ -214,10 +230,10 @@
                "email":"#email#"
             },
             "allied":{
-               "identificationType":"NIT",
-               "identification":"12345625",
-               "name":"LuegoPago",
-               "ciiu":"4050",
+               "identificationType":"#identificationType#",
+               "identification":"#identification#",
+               "name":"#name#",
+               "ciiu":"#ciiu#",
                "entityCode":"8110077137",
                "serviceCode":"1003"
             },
