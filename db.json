@@ -21,8 +21,8 @@
                "name":"Sistecrédito",
                "active":true,
                "credentials":{
-                  "publicKey":"pk_test_123",
-                  "secretKey":"sk_test_123"
+                  "publicKey":"5eeba15a735e4a2e08868191",
+                  "secretKey":"5deac679d38ef90001e8f2c1"
                },
                "banks":[
                   
