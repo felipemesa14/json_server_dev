@@ -33,8 +33,8 @@
                "name":"Pse Avanza",
                "active":true,
                "credentials":{
-                  "publicKey":"pk_test_123",
-                  "secretKey":"sk_test_123"
+                  "publicKey":"8110077137",
+                  "secretKey":"1003"
                },
                "banks":[
                   {
