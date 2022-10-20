@@ -3,8 +3,8 @@
       {
          "id":"5eeba15a735e4a2e08868191",
          "storeId":"5deac679d38ef90001e8f2c1",
-         "docType":"NIT",
-         "document":"8110077137",
+         "identificationType":"NIT",
+         "identification":"8110077137",
          "ciiu":"2050",
          "name":"LuegoPago",
          "phone":"11999999999",
