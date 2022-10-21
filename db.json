@@ -46,25 +46,6 @@
                      "financialInstitutionName":"BANKA"
                   }
                ]
-            },
-            {
-               "id":"65",
-               "name":"Pse Avanza Grpc",
-               "active":true,
-               "credentials":{
-                   "#entityCode#": "8110077137",
-                   "#serviceCode#": "1003"
-               },
-               "banks":[
-                  {
-                     "financialInstitutionCode":"1022",
-                     "financialInstitutionName":"BANCO UNION COLOMBIANO"
-                  },
-                  {
-                     "financialInstitutionCode":"1077",
-                     "financialInstitutionName":"BANKA"
-                  }
-               ]
             }
          ]
       }
@@ -144,149 +125,12 @@
          "updatedAt":"2020-06-18T15:22:50.000Z",
          "config":{
             "driverName":"Sistecredito.Driver",
-            "connectionType":"http-client",
-            "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
-            "configurationDetails":{
-               "action":"pse/createPayment",
-               "url":"https://pse-siste-driver.herokuapp.com/",
-               "methodToExecute":"SendHttpClientPost",
-               "headers":{
-                  "SCOrigen":"Staging",
-                  "Ocp-Apim-Subscription-Key":"42fee88913d34e3b8c2c5ae45847bc32"
-               },
-               "appId":"",
-               "methodType":"",
-               "postRequestMediaType":"application/json"
-            }
-         },
-         "requiredFields":[
-            {
-               "field":"$_id",
-               "display":"#transactionId#"
-            },
-            {
-               "field":"$Client.Document",
-               "display":"#document#"
-            },
-            {
-               "field":"$Client.DocType",
-               "display":"#docType#"
-            },
-            {
-               "Field":"$Value",
-               "display":"#value#"
-            },
-            {
-               "field":"$Invoice",
-               "display":"#ticketId#"
-            },
-            {
-               "field":"$UrlResponse",
-               "display":"#urlResponse#"
-            },
-            {
-               "field":"$Client.Name",
-               "display":"#clientName#"
-            },
-            {
-               "field":"$Client.LastName",
-               "display":"#lastName#"
-            },
-            {
-               "field":"$Client.Phone",
-               "display":"#cellPhone#"
-            },
-            {
-               "field":"$Client.Email",
-               "display":"#email#"
-            },
-            {
-               "field":"$Client.IpAddress",
-               "display":"#ip#"
-            },
-            {
-               "field":"$Client.Address",
-               "display":"#address#"
-            },
-            {
-               "field":"$Description",
-               "display":"#description#"
-            },
-            {
-               "field":"$PaymentMethod.BankCode",
-               "display":"#bankCode#"
-            },
-            {
-               "field":"$PaymentMethod.UserType",
-               "display":"#userType#"
-            },
-            {
-               "field":"$AlliedInformation.IdentificationType",
-               "display":"#identificationType#"
-            },
-            {
-               "field":"$AlliedInformation.Identification",
-               "display":"#identification#"
-            },
-            {
-               "field":"$AlliedInformation.Name",
-               "display":"#alliedName#"
-            },
-            {
-               "field":"$AlliedInformation.Ciiu",
-               "display":"#ciiu#"
-            }
-         ],
-         "templateDataDriver":{
-            "transactionId":"#transactionId#",
-            "client":{
-               "docType":"#docType#",
-               "document":"#document#",
-               "name":"#clientName#",
-               "lastName":"#lastName#",
-               "cellPhone":"#cellPhone#",
-               "address":"#address#",
-               "email":"#email#"
-            },
-            "allied":{
-               "identificationType":"#identificationType#",
-               "identification":"#identification#",
-               "name":"#alliedName#",
-               "ciiu":"#ciiu#",
-               "entityCode":"8110077137",
-               "serviceCode":"1003"
-            },
-            "payment":{
-               "value":"#value#",
-               "vatValue":0,
-               "description":"#description#",
-               "bankCode":"#bankCode#",
-               "userType":"#userType#",
-               "ticketId":"#ticketId#",
-               "urlResponse":"#urlResponse#",
-               "references":[
-                  "#ip#",
-                  "#docType#",
-                  "#document#"
-               ]
-            }
-         }
-      },
-      {
-         "id":"65",
-         "name":"Pse",
-         "icon":"pse.svg",
-         "active":true,
-         "createdAt":"2020-06-18T15:22:50.000Z",
-         "updatedAt":"2020-06-18T15:22:50.000Z",
-         "config":{
-            "driverName":"Sistecredito.Driver",
             "connectionType":"grpc-client",
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
                "action":"pse/createPayment",
                "url":"https://pse-siste-driver.herokuapp.com/",
-               "methodToExecute":"SendGrpcClientRequest",
+               "methodToExecute":"SendGrpcClient",
                "headers":{
                   "SCOrigen":"Staging",
                   "Ocp-Apim-Subscription-Key":"42fee88913d34e3b8c2c5ae45847bc32"
