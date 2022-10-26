@@ -31,7 +31,7 @@
             {
                "id":"55",
                "name":"Pse Avanza",
-               "active":false,
+               "active":true,
                "credentials":{
                    "#entityCode#": "8110077137",
                    "#serviceCode#": "1003"
@@ -55,7 +55,7 @@
          "id":"1",
          "name":"Sistecrédito",
          "icon":"sistecredito.svg",
-         "active":true,
+         "active":false,
          "createdAt":"2020-06-18T15:22:50.000Z",
          "updatedAt":"2020-06-18T15:22:50.000Z",
          "config":{
