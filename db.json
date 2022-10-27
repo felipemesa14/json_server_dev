@@ -129,7 +129,7 @@
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
                "action":"",
-               "url":"http://11.50.19.178:50051",
+               "url":"http://11.50.19.178:64420",
                "methodToExecute":"SendGrpcClient",
                "headers":{
                   "SCOrigen":"Staging",
