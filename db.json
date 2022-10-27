@@ -60,7 +60,7 @@
          "updatedAt":"2020-06-18T15:22:50.000Z",
          "config":{
             "driverName":"Sistecredito.Driver",
-            "connectionType":"http-client",
+            "connectionType":"HttpClient",
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
                "action":"credit/start",
@@ -125,11 +125,11 @@
          "updatedAt":"2020-06-18T15:22:50.000Z",
          "config":{
             "driverName":"Sistecredito.Driver",
-            "connectionType":"grpc-client",
+            "connectionType":"GrpcClient",
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
-               "action":"pse/createPayment",
-               "url":"https://pse-siste-driver.herokuapp.com/",
+               "action":"",
+               "url":"http://11.50.19.178:50051",
                "methodToExecute":"SendGrpcClient",
                "headers":{
                   "SCOrigen":"Staging",
