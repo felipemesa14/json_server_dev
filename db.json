@@ -129,7 +129,7 @@
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
                "action":"",
-               "url":"http://localhost:52721",
+               "url":"http://localhost:50383",
                "methodToExecute":"SendGrpcClient",
                "headers":{
                   "SCOrigen":"Staging",
