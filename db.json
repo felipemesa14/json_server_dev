@@ -125,14 +125,16 @@
          "updatedAt":"2020-06-18T15:22:50.000Z",
          "config":{
             "driverName":"Sistecredito.Driver",
-            "connectionType":"GrpcClient",
+            "connectionType":"HttpClient",
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
-               "action":"",
-               "url":"http://localhost:50383",
-               "methodToExecute":"SendGrpcClient",
+               "action":"api/Pse/CreateTransaction",
+               "url":"http://localhost:51661/",
+               "methodToExecute":"SendHttpClientPost",
                "headers":{
-                  "SCOrigen":"Staging",
+                  "SCLocation": "0,0",
+                  "country" : "co",
+                  "SCOrigen":"Development",
                   "Ocp-Apim-Subscription-Key":"42fee88913d34e3b8c2c5ae45847bc32"
                },
                "appId":"",
