@@ -234,8 +234,8 @@
                "identification":"#identification#",
                "name":"#alliedName#",
                "ciiu":"#ciiu#",
-               "entityCode":"8110077137",
-               "serviceCode":"1003"
+               "entityCode":"#entityCode#",
+               "serviceCode":"#serviceCode#"
             },
             "payment":{
                "value":"#value#",
