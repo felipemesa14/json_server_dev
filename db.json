@@ -128,14 +128,14 @@
             "connectionType":"HttpClient",
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
-               "action":"api/Pse/CreateTransaction",
-               "url":"http://localhost:51661/",
+               "action":"psedriverpasarela/createTransaction",
+               "url":"https://devapi.credinet.co/",
                "methodToExecute":"SendHttpClientPost",
                "headers":{
                   "SCLocation": "0,0",
                   "country" : "co",
                   "SCOrigen":"Development",
-                  "Ocp-Apim-Subscription-Key":"42fee88913d34e3b8c2c5ae45847bc32"
+                  "Ocp-Apim-Subscription-Key":"b0dc8eb7924540e1913ab262b8500721"
                },
                "appId":"",
                "methodType":"",
