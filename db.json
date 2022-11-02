@@ -128,7 +128,7 @@
             "connectionType":"HttpClient",
             "connectionString":"Endpoint=sb://sistecredito.servicebus.windows.net",
             "configurationDetails":{
-               "action":"psedriverpasarela/createTransaction/hola",
+               "action":"psedriverpasarela/createTransaction",
                "url":"https://devapi.credinet.co/",
                "methodToExecute":"SendHttpClientPost",
                "headers":{
